@@ -1,41 +1,44 @@
-# QA Portfolio – Web Application Testing
+# Портфолио QA-инженера — Тестирование веб-приложения
 
-## 📌 Project Description
-This project contains manual testing documentation for a sample e-commerce web application.
+ 📌 Описание проекта
+В данном проекте представлена документация по ручному тестированию функционала учебного e-commerce приложения (интернет-магазина).
 
-The goal of this project is to demonstrate practical QA skills, including:
-- Writing test cases
-- Identifying bugs
-- Applying test design techniques
-
----
-
-## 🔍 Scope
-The following modules were tested:
-- Login
-- Registration
-- Shopping Cart
+Цель проекта — продемонстрировать практические навыки обеспечения качества (QA), включая:
+- Разработку тестовой документации (Test Cases, Bug Reports).
+- Применение техник тест-дизайна.
+- Проведение функционального и нефункционального тестирования.
 
 ---
 
-## 🧪 Testing Types
-- Positive testing
-- Negative testing
-- Validation testing
+ 🔍 Область тестирования (Scope)
+Были протестированы следующие критически важные модули:
+- Авторизация (Login): проверка входа с различными учетными данными.
+- Регистрация (Registration): создание нового аккаунта и валидация полей.
+- Корзина покупок (Shopping Cart): добавление, удаление товаров и пересчет итоговой суммы.
 
 ---
 
-## 📄 Test Documentation
-- Test Cases → test-cases.md
-- Bug Reports → bug-reports.md
+ 🧪 Виды тестирования
+В ходе проекта применялись следующие подходы:
+- Позитивное тестирование: проверка стандартных сценариев использования.
+- Негативное тестирование: проверка реакции системы на некорректные данные.
+- Тестирование валидации: проверка ограничений полей ввода (пустые поля, спецсимволы, длина строки).
+- UI-тестирование: проверка корректности отображения элементов интерфейса.
 
 ---
 
-## 🛠 Tools Used
-- Manual testing
-- GitHub
+ 📄 Тестовая документация
+
+- Тест-кейсы → test-cases.md
+- Отчеты о дефектах (Bug Reports) → bug-reports.md
 
 ---
 
-## 👤 Author
-QA beginner / Junior QA Engineer
+ 🛠 Использованные инструменты и техники
+- Техники тест-дизайна: Эквивалентное разделение (EP), Анализ граничных значений (BVA).
+- Инструменты: 
+  - GitHub: хранение документации и версионность.
+- Методология: Ручное (Manual) функциональное тестирование.
+
+ 👤 Автор
+Начинающий QA-инженер / Junior QA Engineer
