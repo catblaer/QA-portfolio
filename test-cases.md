@@ -1,48 +1,59 @@
-# Test Cases
+# Тест-кейсы (Test Cases)
 
-## Module: Login
+ Модуль: Авторизация (Login)
 
-### TC-LOGIN-001 – Login with valid credentials
-Priority: High  
+ TC-LOGIN-001 – Вход с валидными учетными данными
+Приоритет: Высокий 
+Предусловия: Пользователь зарегистрирован в системе. 
 
-Preconditions:  
-User is registered  
+Шаги:
+1. Открыть страницу авторизации.
+2. Ввести валидный email.
+3. Ввести валидный пароль.
+4. Нажать кнопку «Войти» (Login).
 
-Steps:
-1. Open login page  
-2. Enter valid email  
-3. Enter valid password  
-4. Click Login  
+Ожидаемый результат: 
+Пользователь успешно авторизован и перенаправлен на главную панель управления (dashboard). 
 
-Expected Result:  
-User is logged in and redirected to dashboard  
+Фактический результат: 
+Вход выполнен успешно, произошел редирект на страницу dashboard. 
 
----
-
-### TC-LOGIN-002 – Login with incorrect password
-Priority: High  
-
-Preconditions:  
-User exists  
-
-Steps:
-1. Open login page  
-2. Enter valid email  
-3. Enter wrong password  
-4. Click Login  
-
-Expected Result:  
-Error message displayed  
+Статус: Пройден (Passed) 
 
 ---
 
-### TC-LOGIN-003 – Login with empty fields
-Priority: Medium  
+ TC-LOGIN-002 – Вход с неверным паролем
+Приоритет: Высокий 
+Предусловия: Пользователь существует в системе. 
 
-Steps:
-1. Open login page  
-2. Leave fields empty  
-3. Click Login  
+Шаги:
+1. Открыть страницу авторизации.
+2. Ввести валидный email.
+3. Ввести неверный пароль.
+4. Нажать кнопку «Войти» (Login).
 
-Expected Result:  
-Validation errors displayed
+Ожидаемый результат: 
+Отображается сообщение об ошибке доступа. 
+
+Фактический результат: 
+Отображается системное сообщение об ошибке: «Invalid credentials» (Неверные учетные данные). 
+
+Статус: Пройден (Passed) 
+
+---
+
+ TC-LOGIN-003 – Вход с пустыми полями
+Приоритет: Средний 
+
+Шаги:
+1. Открыть страницу авторизации.
+2. Оставить поля ввода пустыми.
+3. Нажать кнопку «Войти» (Login).
+
+Ожидаемый результат: 
+Отображаются сообщения о необходимости валидации полей. 
+
+Фактический результат: 
+Под полями ввода появились сообщения валидации: «Email is required» и «Password is required». 
+
+Статус: Пройден (Passed)
